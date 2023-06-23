@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-3 py-2 rounded-full w-full text-white bg-gray-800 outline-gray-500 outline 
+      outline-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 hover:bg-gray-800 hover:text-white duration-300;
+  }
+  .input {
+    @apply w-full p-3 outline outline-1 outline-gray-500 hover:outline-blue-400 focus:outline-green-600;
+  }
+  .img {
+    @apply max-w-full h-auto;
+  }
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+  .header {
+    @apply text-2xl sm:text-3xl font-bold text-center;
+  }
+
+  body {
+    @apply bg-gray-200;
+  }
+  span {
+    @apply hover:cursor-pointer;
+  }
+}
