@@ -72,6 +72,8 @@ export const useNoteStore = defineStore("note", () => {
         alert("New note added successfully");
       }
       closeModal();
+    } else {
+      alert("please add a note");
     }
     sortNotesByUpdatedAt();
   };
